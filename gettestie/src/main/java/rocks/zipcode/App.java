@@ -4,7 +4,7 @@ package rocks.zipcode;
  * Hello world!
  */
 public final class App {
-    private App() {
+    App() {
     }
 
     /**
