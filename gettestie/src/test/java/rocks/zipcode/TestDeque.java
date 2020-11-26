@@ -31,5 +31,18 @@ public class TestDeque {
 
         }
 
+    @Test
+    public void testRemoveDeque(){
+        deque.add(person2);
+        deque.add(person3);
+        deque.addFirst(person1);
+        deque.addLast(person4);
+
+        deque.removeFirst();
+        Person expectedFirst = person2;
+        Person actualFirst = deque.getFirst();
+        Assert.assertEquals(expectedFirst, actualFirst);
+    }
+
     }
 
